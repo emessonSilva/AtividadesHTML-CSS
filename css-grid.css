@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 300px); /*determina a quantidade e o tamanho das colunas, no exemplo 2 colunas de 300px*/
+    grid-template-rows: 300px 300px; /*determina a quantidade e o tamanho das linhas, no exemplo 2 linhas de 300px, sem o repeat*/
+    align-items: center; /*alinha no eixo X*/
+    justify-items: center; /*alinha no eixo Y*/
+    grid-template-areas: "red yellow"
+    "blue green";  /*Com esse comando posso trocar de lugar as boxes, apenas indicando qual o lugar delas*/
+}
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+    grid-area: red; /*grid-are faz correspondência ao grid-template-area*/
+}
+
+.blue{
+    background-color: blue;
+    grid-area: blue;
+}
+
+.yellow{
+    background-color: yellow;
+    grid-area: yellow;
+}
+
+.green{
+    background-color: green;
+    grid-area: green;
+}
+
+/*Adicionando o comando repeat(auto-fill, x tamanho) no grid-template-columns as boxes ficam responsivas de acordo com o tamanho da tela,
+porém, tem de se tirar o comando grid-template-areas */
