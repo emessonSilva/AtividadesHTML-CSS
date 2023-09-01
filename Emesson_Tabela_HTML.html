@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+        table {
+            color: rgb(236, 234, 234);
+            background-color: rgb(17, 17, 17);
+            border-collapse: collapse;
+            animation-name: colorchange;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            margin: auto;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        @keyframes colorchange {
+            0% {
+                border-color: rgb(43, 13, 238);
+            }
+            50% {
+                border-color: rgb(2, 251, 43);
+            }
+            100% {
+                border-color: rgb(253, 5, 244);
+            }
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-family: 'Black Ops One', cursive;
+            
+        }
+
+        h2{
+            text-align: center;
+            color: white;
+            font-family: 'Black Ops One', cursive;
+        }
+
+        footer{
+            text-align: center;
+            color: white;
+        }
+
+        body {
+               background-color: #000000; 
+               background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-particulas-abstratas-tecnologia-realista_23-2148431736.jpg'); 
+               background-size: 100%; 
+               background-repeat: no-repeat; 
+               background-attachment: fixed;              
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>EletroTech Emporium</h1>
+        </div>
+        <div>
+            <h2>Notebooks</h2>
+        </div>
+        <table border="5">
+            <thead>
+                <th>Modelo</th>
+                <th>Processador</th>
+                <th>RAM</th>
+                <th>Armazenamento</th>
+                <th>Preço</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop Horizon</td>
+                    <td>Intel Core i5	</td>
+                    <td>8GB</td>
+                    <td>256GB SSD</td>
+                    <td>R$ 3.499,00</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Laptop Zenith</td>
+                    <td>AMD Ryzen 7</td>
+                    <td>16GB</td>
+                    <td>512GB SSD</td>
+                    <td>R$ 4.199,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>AMD Ryzen 5</td>
+                    <td>8GB</td>
+                    <td>256GB SSD</td>
+                    <td>R$ 3.499,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Nova</td>
+                    <td>Intel Core i7</td>
+                    <td>12GB</td>
+                    <td>1TB HDD</td>
+                    <td>R$ 3.999,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laptop Swift</td>
+                    <td>Intel Core i3</td>
+                    <td>4GB</td>
+                    <td>128GB SSD</td>
+                    <td>R$ 2.899,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Vortex</td>
+                    <td>AMD Ryzen 5</td>
+                    <td>8GB</td>
+                    <td>512GB SSD</td>
+                    <td>R$ 3.799,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Quantum</td>
+                    <td>Intel Core i7</td>
+                    <td>16GB</td>
+                    <td>1TB SSD</td>
+                    <td>R$ 4.799,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Stellar</td>
+                    <td>AMD Ryzen 9</td>
+                    <td>32GB</td>
+                    <td>1TB SSD</td>
+                    <td>R$ 5.999,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Aurora</td>
+                    <td>Intel Core i5</td>
+                    <td>8GB</td>
+                    <td>512GB SSD</td>
+                    <td>R$ 3.699,00</td>
+                </tr>
+                <tr>
+                    <td>Laptop Odyssey</td>
+                    <td>Intel Core i7</td>
+                    <td>16GB</td>
+                    <td>512GB SSD</td>
+                    <td>R$ 4.499,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 EletroTech Emporium. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

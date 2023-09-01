@@ -1,0 +1,26 @@
+div {
+    background-color: rgb(6, 215, 82);
+}
+
+.paddinglonghand {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.marginlonghand {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+.paddingshorthand {
+    padding: 10px 5px 10px 5px;
+}
+
+.marginshorthand {
+    margin: 10px 5px 10px 5px;
+}
