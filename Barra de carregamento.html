@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Carregamento</title>
+    <style>
+        .container {
+            height: 50px;
+            background-color: #CCC;
+            position: relative;
+        }
+
+        .container .progress-bar {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(to right, rgb(9, 212, 70), rgb(23, 219, 209));
+            animation: progress-animation 5s infinite;
+        }
+
+        @keyframes progress-animation {
+            0% { width: 0%; }
+            50% { width: 50%; }
+            100% { width: 100%;}
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <main>
+        <div class="container">
+            <div class="progress-bar"></div>
+        </div>
+    </main>
+</body>
+</html>
